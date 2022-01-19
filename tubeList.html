@@ -74,7 +74,7 @@
 <body>
 
     <div class="p-5 bg-primary text-white text-center">
-        <h1>The Vacuum Tube Respository <span class="badge bg-secondary">5.0</span></h1>
+        <h1>The Vacuum Tube Respository <span class="badge bg-secondary">5.1</span></h1>
     </div>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -94,7 +94,7 @@
     </nav>
 
     <div class="container mt-5">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a tube...">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a tube by Name...">
 
         <table id="myTable">
             <tr class="header">
@@ -140,7 +140,7 @@
 
             // Loop through all table rows, and hide those who don't match the search query
             for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
+                td = tr[i].getElementsByTagName("td")[1];
                 if (td) {
                     txtValue = td.textContent || td.innerText;
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
